@@ -46,7 +46,7 @@ export default function MainLayout({ children, ...props }) {
             <Link href='test' className={styles.layoutLinkMenu}>
               <IconText icon='search' text="this is"/>
             </Link> 
-            <Link href='content' className={styles.layoutLinkMenu}>
+            <Link href='article' alt='Article' className={styles.layoutLinkMenu}>
               <IconText icon='content' text="Articles"/>
             </Link> 
             <Link href='ezp' className={styles.layoutLinkMenu}>
