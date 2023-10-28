@@ -1,11 +1,11 @@
 :root {
   --main-bg-color: #fff;
-  --secondary-bg-color:#f0f2f570;
-  --primary-bg-color:#323b43;
+  --secondary-bg-color:#e4eaf170;
 
 
-  --main-fore-color: #000;
-  --secondary-fore-color: #525d71;
+  --main-fore-color: #1fa4d3;
+  --secondary-fore-color: #07759b;
+  --hover-fore-color: #00bbfe;
 }
 
 
@@ -19,6 +19,3 @@ body {
     color:#000;
     width:100%;
 }
-
-
-
