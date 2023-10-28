@@ -16,6 +16,7 @@ export default function Document() {
           content="telephone=no, date=no, email=no, address=no"
         />
         <meta key="google-adsense-account" name="google-adsense-account" content="ca-pub-8018701717083970" />
+        <link rel="icon" type="image/x-icon" href="/img/logo.svg" />
       </Head>
       <body>
         <Main />
