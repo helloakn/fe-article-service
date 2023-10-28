@@ -1,7 +1,11 @@
 /* begin style components*/
 import styled from 'styled-components';
 
-export const MainContainer = styled.div`
+
+
+export const MainContainer = styled.div.withConfig({
+  shouldForwardProp: (props) => 'isShow' !== props,
+})`
   position:fixed;
   z-index:1000;
 
