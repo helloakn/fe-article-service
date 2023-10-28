@@ -89,7 +89,9 @@ export    const MenuContainer = styled.div`
   align-items:center;
 `
 
-export const DivProfile = styled.div`
+export const DivProfile = styled.div.withConfig({
+  shouldForwardProp: (props) => 'backgroundColor' !== props,
+})`
   width:50px;
   height:50px;
   border-radius:50%;
