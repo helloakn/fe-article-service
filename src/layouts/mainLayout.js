@@ -1,103 +1,14 @@
-import Link from 'next/link'
-import Image from 'next/image'
-
-import styles from 'app/styles/layouts/mainLayout.module.css'
-
-import SearchBox from 'app/components/searchBox';
-import IconText from 'app/components/iconText';
-
-import {
-  MainContainer,
-    MainHeader , 
-      MainHeaderBanner, 
-        LogoContainer,LogoText,SearchAndMenuContainer,MenuContainer ,SearchContainer,ProfileContainer,
-      DivLine,DivProfile,DivNotification,
-
-    LayoutBody,
-    LayoutFooter,LayoutFooterInner
-}
-from 'app/style/layouts/mainLayout.css'
-
-import NotificationList from 'app/components/notification/notificationList'
-
-import MainLayoutController from 'app/controllers/layouts/mainLayout.controllers';
-
-export default class MainLayout extends MainLayoutController{
+import React, { useState } from "react"
+import MainLayoutTemplate from "./mainLayout.template";
+export default class MainLayout extends MainLayoutTemplate {
   constructor(props) {
     super(props);
+    this.state = {
+      isShowNoti: false // this is a good place to set Initial value
+    };
+    this.notificationClick = this.notificationClick.bind(this);
   }
-  render(){
-    const currentDate = (new Date()).getFullYear();
-    const currentDateTab = <label>{currentDate}</label>
-    return <>
-    <MainContainer>
-    <NotificationList isShow={this.state.isShowNoti} />
-      {/* HEADERS */}
-      <MainHeader>
-        <DivLine />
-        <MainHeaderBanner>
-          <LogoContainer>
-            <Image
-                src="/img/logo.svg"
-                width={50}
-                height={50}
-                alt="LoGO"
-              />
-              <LogoText>Aura <br/> All In One</LogoText>
-          </LogoContainer>
-          <SearchAndMenuContainer>
-              <MenuContainer>
-                <Link href='test' className={styles.layoutLinkMenu}>
-                  <IconText icon='home' text="HOME"/>
-                </Link>
-                <Link href='article' alt='Article' className={styles.layoutLinkMenu}>
-                  <IconText icon='content' text="Articles"/>
-                </Link> 
-                <Link href='ezp' className={styles.layoutLinkMenu}>
-                  <IconText icon='video' text="EZP"/>
-                </Link> 
-                <Link href='analystic' className={styles.layoutLinkMenu}>
-                  <IconText icon='chart' text="Analystic"/>
-                </Link> 
-              </MenuContainer>
-              <SearchContainer>
-                <SearchBox />
-              </SearchContainer>
-          </SearchAndMenuContainer>
-          <ProfileContainer>
-            
-            <DivNotification onClick={this.notificationClick}>
-             <i className={'fas fa-bell noti'} ></i>
-            </DivNotification>
-  
-            <DivProfile
-              src=''
-              backgroundColor="silver"
-            />
-          </ProfileContainer>
-        </MainHeaderBanner>
-        <DivLine />
-      </MainHeader>
-      {/* END HEADERS */}
-  
-      {/* BODY */}
-      <LayoutBody>
-      {this.props.children}
-      </LayoutBody>
-      {/* END BODY */}
-  
-      {/* FOOTER */}
-      <DivLine />
-  
-      <LayoutFooter>
-        <LayoutFooterInner>
-          <div>@ 2023 - {currentDateTab} <br/>All Rights Reserved</div>
-        </LayoutFooterInner>
-      </LayoutFooter>
-      {/* END FOOTER */}
-  
-    </MainContainer>
-    </>
+  notificationClick() {
+    this.setState({ isShowNoti: !this.state.isShowNoti })
   }
-  
 }

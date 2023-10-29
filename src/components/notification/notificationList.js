@@ -1,7 +1,7 @@
 
 import {
   MainContainer
-} from 'app/style/components/notification/notificationList.style'
+} from 'app/components/notification/notificationList.elements'
 
 export default function NotificationList({ children, ...props }) {
   return (
