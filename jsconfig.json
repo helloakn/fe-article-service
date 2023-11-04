@@ -3,5 +3,10 @@
     "paths": {
       "app/*": ["./src/*"]
     }
-  }
+  },
+  "typeAcquisition": {
+    "include": [
+        "jest","@testing-library/jest-dom"
+    ]
+}
 }

@@ -12,7 +12,7 @@ const nextConfig = {
   },
   serverRuntimeConfig: {
     // Will only be available on the server side
-    NEXT_PUBLIC_THAIPORN_SITE_VIDEO:    process.env.NEXT_PUBLIC_THAIPORN_SITE_VIDEO
+    
   },
 }
 

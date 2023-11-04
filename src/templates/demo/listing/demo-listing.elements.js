@@ -13,7 +13,6 @@ const MainContainer = styled.div`
 
 const MainContainerBody = styled.div`
   width:100%;
-  min-height:74vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -35,6 +34,17 @@ const HeadRow = styled.div`
   border-top-right-radius:10px;
 `;
 
+const HeadAction = styled.div`
+  width:50%;
+  height:50px;
+
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-end;
+  align-items:center;
+  
+  padding-right:10px;
+`;
 const ATab = styled.a`
   background-color:var(--primary-bg-color);
   padding:5px 20px 5px 20px;
@@ -51,7 +61,7 @@ const ServiceTitle = styled.div`
   padding-left:10px;
   font-size:14px;
 
-  color:var(--secondary-fore-color);
+  color:#fff;
 `;
 
 const Table = styled.table`
@@ -67,9 +77,12 @@ const Table = styled.table`
   th{
     padding-top:15px;
     padding-bottom:15px;
-    background-color:var(--main-fore-color);
+    background-color:var(--main-bg-color);
+    color: var(--main-fore-color);
   }
-
+  tbody{
+    color:#fff;
+  }
   thead th:nth-child(1) {
     width: 5%;
     text-align:center;
@@ -108,13 +121,15 @@ const Table = styled.table`
 
   
   tbody tr:nth-child(odd) {
-    background-color: #f0f8ff;
+    background-color:var(--secondary-bg-color);
     padding-top:50px;
     padding-bottom:50px;
+    
   }
 
   tbody tr:hover {
-    background-color: var(--secondary-fore-color);
+    background-color: var(--main-hover-bg-color);
+    
   }
 
   td{
@@ -126,6 +141,6 @@ const Table = styled.table`
 
 export {
   MainContainer,MainContainerBody,
-  HeadRow, ATab, ServiceTitle,
+  HeadRow,HeadAction, ATab, ServiceTitle,
   Table
 }

@@ -4,10 +4,12 @@ import React from "react"
 import MainLayout from "app/layouts/mainLayout";
 
 import { MainContainer,MainContainerBody,
-   HeadRow, ATab, ServiceTitle,
+   HeadRow, HeadAction, ATab, ServiceTitle,
   Table
-} from './articleListing.elements'
+} from './demo-listing.elements'
 
+import Button from "app/components/button/button.component";
+import Pagination from "app/components/pagination/pagination.component";
 
 export default class ArticleListingTemplate extends React.Component{
   constructor(props){
@@ -18,7 +20,6 @@ export default class ArticleListingTemplate extends React.Component{
   }
 
   render(){
-
     const rows = this.state.data.map(x=>{
       return (
         <tr key={'tr'+x.id}>
@@ -27,7 +28,12 @@ export default class ArticleListingTemplate extends React.Component{
           <td>{x.categories}</td>
           <td>{x.created_at}</td>
           <td>{x.updated_at}</td>
-          <td>action</td>
+          <td>
+            <Button
+              caption="View"
+              href="setup"
+              buttonType="info"
+            /></td>
         </tr>
       )
     })
@@ -38,7 +44,13 @@ export default class ArticleListingTemplate extends React.Component{
           <MainContainerBody>
               <HeadRow>
                 <ServiceTitle>Demo Serive : <label>Listing</label></ServiceTitle>
-                <ATab href='article/new'> New  </ATab>
+                <HeadAction>
+                  <Button
+                    caption="SetUp"
+                    href="demo/setup"
+                    buttonType="primary"
+                  />
+                </HeadAction>
               </HeadRow>
               <Table>
                 <thead>
@@ -55,6 +67,13 @@ export default class ArticleListingTemplate extends React.Component{
                 {rows}
                 </tbody>
               </Table>
+              <Pagination 
+                totalPage={100}
+                maxLength={5}
+                activePage={3}
+                prefixHref={''}
+                query={''}
+              />
           </MainContainerBody>
         </MainContainer>
       </MainLayout>

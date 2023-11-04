@@ -1,5 +1,5 @@
 
-import DemoListingTemplate from 'app/templates/demo/listing/demo-listing.template';
+import DemoSetUpTemplate from 'app/templates/demo/setup/demo-setup.template';
 
 export async function getServerSideProps(context) {
   // Fetch data from external API
@@ -16,7 +16,7 @@ export async function getServerSideProps(context) {
   return { props: { data } }
 }
 
-export default class DemoListing extends DemoListingTemplate {
+export default class SetUp extends DemoSetUpTemplate {
   constructor(props) {
     super(props);
     this.state = {

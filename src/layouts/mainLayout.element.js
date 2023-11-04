@@ -120,8 +120,9 @@ export const LayoutBody = styled.div`
   background-color: var( --main-bg-color);
   width: 100%;
   min-height: 74vh;
-
+  min-height: 200px;
   margin-top:16vh;
+
   
   display:flex;
   flex-direction:row;

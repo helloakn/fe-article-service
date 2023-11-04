@@ -3,8 +3,7 @@ import Image from 'next/image'
 import React from 'react';
 import styles from 'app/styles/layouts/mainLayout.module.css'
 
-import SearchBox from 'app/components/searchBox';
-import IconText from 'app/components/iconText';
+import { SearchBox, IconText } from 'app/components';
 
 import {
   MainContainer,
@@ -30,7 +29,7 @@ export default class MainLayoutTemplate extends React.Component{
     const currentDate = (new Date()).getFullYear();
     const currentDateTab = <label>{currentDate}</label>
     return <>
-    <MainContainer>
+    <MainContainer name="mainLayout">
     <NotificationList isShow={this.state.isShowNoti} />
       {/* HEADERS */}
       <MainHeader>
