@@ -20,19 +20,7 @@ const MainContainerBody = styled.div`
   background-color: var(--main-bg-color);
 `;
 
-const HeadRow = styled.div`
-  width:95%;
-  height:50px;
 
-  display:flex;
-  flex-direction:row;
-  justify-content:space-between;
-  align-items:center;
-  
-  background-color: var(--secondary-bg-color);
-  border-top-left-radius:10px;
-  border-top-right-radius:10px;
-`;
 
 const HeadAction = styled.div`
   width:50%;
@@ -141,6 +129,6 @@ const Table = styled.table`
 
 export {
   MainContainer,MainContainerBody,
-  HeadRow,HeadAction, ATab, ServiceTitle,
+ HeadAction, ATab, ServiceTitle,
   Table
 }

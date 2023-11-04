@@ -21,3 +21,13 @@ export default function Button({ children, ...props }) {
     </MainContainer>
   )
 }
+/*
+USAGE : =>
+
+  <Button
+    caption="Setup"
+    href="demo/setup"
+    buttonType="default"
+  />
+  
+*/

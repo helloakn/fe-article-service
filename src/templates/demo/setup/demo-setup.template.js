@@ -3,8 +3,9 @@ import React from "react"
 
 import MainLayout from "app/layouts/mainLayout";
 
+import {HeaderRow} from 'app/components/common'
 import { MainContainer,MainContainerBody,
-   HeadRow, HeadAction, ServiceTitle,
+    HeadAction, ServiceTitle,
    FormContainer,Row,HalfRow
 } from './demo-setup.elements'
 import { Caption } from "#components";
@@ -23,16 +24,16 @@ export default class ArticleListingTemplate extends React.Component{
       <MainLayout>
         <MainContainer>
           <MainContainerBody>
-              <HeadRow>
+              <HeaderRow>
                 <ServiceTitle>Demo Serivesaaa: <label>Setup</label></ServiceTitle>
                 <HeadAction>
                   <Button
-                    caption="back"
+                    caption="Back"
                     href="./"
-                    buttonType="secondary"
+                    buttonType="default"
                   />
                 </HeadAction>
-              </HeadRow>
+              </HeaderRow>
              <FormContainer>
               <Row direction="row">
                 <HalfRow>
