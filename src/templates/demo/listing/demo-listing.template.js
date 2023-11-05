@@ -31,10 +31,17 @@ export default class ArticleListingTemplate extends React.Component{
           <td>{x.updated_at}</td>
           <td>
             <Button
-              caption="View"
-              href="setup"
-              buttonType="info"
-            /></td>
+              caption="Setup"
+              href="demo/setup"
+              buttonType="default"
+            />
+            <br/>
+            <Button
+              caption="Delete"
+              href="demo/setup"
+              buttonType="primary"
+            />
+          </td>
         </tr>
       )
     })

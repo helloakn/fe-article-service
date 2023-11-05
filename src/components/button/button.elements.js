@@ -3,8 +3,8 @@
 import styled from 'styled-components';
 
 const COLOR_SCHEMS = {
-  default:{backgroundColor:'var(--secondary-bg-color)',hover:'var(--main-bg-color)', fore:'var(--secondary-fore-color)',border:'var(--secondary-fore-color)'},
-  primary:{backgroundColor:'#0dcaf0',hover:'#20a4d2', fore:'#fff',border:'#3c484c'},
+  default:{backgroundColor:'var(--secondary-bg-color)',hover:'var(--main-bg-color)', fore:'var(--main-fore-color)',border:'var(--main-border-color)'},
+  primary:{backgroundColor:'var(--primary-bg-color)',hover:'var(--maprimaryin-bg-color)', fore:'var(--primary-fore-color)',border:'var(--primary-border-color)'},
   secondary:{backgroundColor:'#6c757d',hover:'#6c757d', fore:'#fff',border:'#3c484c'},
   success:{backgroundColor:'#198754',hover:'#198754', fore:'#fff',border:'#3c484c'},
   danger:{backgroundColor:'#dc3545',hover:'#dc3545', fore:'#fff',border:'#3c484c'},

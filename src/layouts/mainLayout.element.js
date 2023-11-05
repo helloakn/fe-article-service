@@ -96,13 +96,16 @@ export const DivProfile = styled.div.withConfig({
   height:50px;
   border-radius:50%;
   background-color: ${props => props.backgroundColor || "var(--secondary-bg-color)"};
+  background-image: url("http://localhost:3000/img/user.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
   margin-right:5px;
 `
 export const DivNotification = styled.div`
   width:50px;
   height:50px;
   border-radius:50%;
-  background-color: var(--secondary-bg-color);
+  background-color: var(--main-bg-color);
   margin-right:5px;
   display:flex;
   justify-content:center;
@@ -154,6 +157,7 @@ export const LayoutFooterInner = styled.div`
 
   text-align:center;
   font-size:12px;
+  color:var(--main-fore-color);
 `
 /* END FOOTER */
 

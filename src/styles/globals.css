@@ -1,12 +1,19 @@
 :root {
   --main-bg-color: #0f0f0f;
-  --secondary-bg-color:#212121;
-
+  --main-border-color: #1fa4d3;
   --main-fore-color: #1fa4d3;
-  --secondary-fore-color: #07759b;
-  --hover-fore-color: #00bbfe;
-  
   --main-hover-bg-color:#494646;
+
+  --hover-fore-color: #00bbfe;
+
+  --secondary-bg-color:#212121;
+  --secondary-fore-color: #07759b;
+  --secondary-border-color: #07759b;
+
+  --primary-bg-color:#132328;
+  --primary-fore-color:#00bbfe;
+  --primary-border-color:#1161bc;
+  
 }
 
 

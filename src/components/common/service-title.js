@@ -4,7 +4,7 @@ const ServiceTitle = styled.div`
   padding-left:10px;
   font-size:14px;
 
-  color:var(--secondary-fore-color);
+  color:var(--main-fore-color);
 `;
 
 export default ServiceTitle

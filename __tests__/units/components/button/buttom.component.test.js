@@ -22,6 +22,6 @@ describe('button.elements', () => {
       />
     ).toJSON()
     // THEN
-    expect(tree).toHaveStyleRule('background-color', '#0dcaf0')
+    expect(tree).toHaveStyleRule('background-color', 'var(--primary-bg-color)')
   })
 })

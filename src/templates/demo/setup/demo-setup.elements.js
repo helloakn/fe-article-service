@@ -53,35 +53,8 @@ const ServiceTitle = styled.div`
   color:var(--secondary-fore-color);
 `;
 
-const FormContainer = styled.div`
-  width:95%;
-  min-height:900px;
-  background-color:red;
-
-  display:flex;
-  flex-direction:column;
-`;
-
-
-const Row = styled.div`
-  width:100%;
-  background-color:red;
-
-  display:flex;
-  flex-direction:${props=>props.direction?props.directin:"column"};
-  background-color:blue;
-`;
-const HalfRow = styled.div`
-  width:100%;
-  background-color:red;
-
-  display:flex;
-  flex-direction:column;
-  background-color:blue;
-`;
 
 export {
   MainContainer,MainContainerBody,
-  HeadRow,HeadAction, ServiceTitle,
-  FormContainer,Row,HalfRow
+  HeadRow,HeadAction, ServiceTitle
 }

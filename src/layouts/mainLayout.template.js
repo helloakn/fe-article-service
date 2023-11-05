@@ -71,7 +71,7 @@ export default class MainLayoutTemplate extends React.Component{
   
             <DivProfile
               src=''
-              backgroundColor="silver"
+              backgroundColor="var(--main-bg-color);"
             />
           </ProfileContainer>
         </MainHeaderBanner>
