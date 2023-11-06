@@ -59,7 +59,7 @@ export default class ArticleListingTemplate extends React.Component {
 
             <FormControl.Container>
 
-              <Row direction="column" justifyContent='center' alignItems="center">
+              <Row direction="column" justifycontent='center' alignitems="center">
                 <Row className='halfWidth'>
                   <FormControl.Group>
                     <FormControl.Caption>* Title</FormControl.Caption>
@@ -80,7 +80,7 @@ export default class ArticleListingTemplate extends React.Component {
                 </Row>
               </Row>
 
-              <Row direction="column" justifyContent='center' alignItems="center">
+              <Row direction="column" justifycontent='center' alignitems="center">
                 <Row className='halfWidth'>
                   <FormControl.Group>
                     <FormControl.Caption>* Intro Description</FormControl.Caption>
@@ -95,7 +95,7 @@ export default class ArticleListingTemplate extends React.Component {
                 </Row>
               </Row>
 
-              <Row direction="column" justifyContent='center' alignItems="center">
+              <Row direction="column" justifycontent='center' alignitems="center">
                 <Row className='halfWidth'>
                   <FormControl.Group className='alignRight'>
                     <Button
