@@ -64,7 +64,11 @@ export default class MainLayoutTemplate extends React.Component{
               </SearchContainer>
           </SearchAndMenuContainer>
           <ProfileContainer>
-            
+
+            <DivNotification onClick={this.notificationClick}>
+             <i className={'fas fa-comment-dots noti'} ></i>
+            </DivNotification>
+             
             <DivNotification onClick={this.notificationClick}>
              <i className={'fas fa-bell noti'} ></i>
             </DivNotification>

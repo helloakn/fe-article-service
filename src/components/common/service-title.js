@@ -5,6 +5,10 @@ const ServiceTitle = styled.div`
   font-size:14px;
 
   color:var(--main-fore-color);
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
 `;
 
 export default ServiceTitle
